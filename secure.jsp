@@ -24,15 +24,31 @@ try
 %>
 <html>
 
-<body background="i:\hr\hrmsCODINGS\sky.jsp">
+<body background="sky.jpg">
 
 
-<p> certificate   </P>
+
 <form method="get" action="login.html" >
-<td > <img src="d:\save.bmp" width="120" height="75"></td>
+<td > <img src="save.bmp" width="120" height="75"></td>
 
-  <input type="text" value="<%= cid %>" >
- <input type="submit" value="       ok   " >
+<p align="center">&nbsp;
+  <p align="center"><font color="#CC0000" size="4">CERTIFICATION</font>
+  <p align="center">&nbsp;
+  
+  
+  <table width="33%" border="0" align="center">
+    <tr> 
+      <td width="51%">ISSUED CID:</td>
+      <td width="49%"><input type="text" value="<%= cid %>" size="20"></td>
+    </tr>
+    <tr> 
+      <td>ISSUED BY:</td><td>ADMINISTRATOR</td>
+      
+    </tr>
+  </table>
+
+  
+ <input type="submit" value="       OK   " >
 
 
 </form>

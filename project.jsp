@@ -1,8 +1,8 @@
 <%@page import="java.sql.*"%>
 <html>
 <body bgcolor="Peachpuff">
-<CENTER><B><h3> PROJECT LIST  </H3>
-<H4>TIME 10.AM TO 12.PM </H4></B></CENTER>
+<CENTER><B><h3> PROJECT LIST  </H3></CENTER>
+
 <CENTER>
 <table BORDER="1" cellpadding="10">
 
@@ -16,7 +16,7 @@ try
 	Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
 	con=DriverManager.getConnection("jdbc:odbc:central");
  	stat=con.createStatement();
- 	rs=stat.executeQuery("select regno,name,coursename,project from Registration where coursename='J2EE' and batchtimings='10am to 12pm'");
+ 	rs=stat.executeQuery("select regno,name,coursename,project from Registration ");
 		
 while(rs.next())
 {
@@ -30,7 +30,7 @@ while(rs.next())
 }
 catch(Exception e)
 {
-out.println(e);
+out.println();
 }
 %>
 </table>
